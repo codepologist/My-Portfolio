@@ -1,0 +1,227 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+import { motion, useScroll, useSpring } from "framer-motion";
+import {
+  project_1,
+  project_2,
+  project_3,
+  project_4,
+  project_5,
+  project_6,
+  project_7,
+  project_8,
+  project_9,
+  project_10,
+  project_11,
+  project_12,
+} from "../assets";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+const Projects = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+  const ProjectList = [
+    {
+      id: 1,
+      name: "HR Solutions for Distributed Teams",
+      imageUrl: project_1,
+      text: "Live site",
+      url: "https://remote-clone.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/buymejollof",
+    },
+    {
+      id: 2,
+      name: "E-commerce Food Delivery Portal",
+      imageUrl: project_2,
+      text: "Live site",
+      url: "https://buymejollof.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/buymejollof",
+    },
+    {
+      id: 3,
+      name: "E-commerce Market Place for Designers",
+      imageUrl: project_3,
+      text: "Live site",
+      url: "https://dribbble-job-board.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/dribbble-job-board",
+    },
+    {
+      id: 4,
+      name: "Elementary School Application Portal",
+      imageUrl: project_4,
+      text: "Live site",
+      url: "https://elevo.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/elevo",
+    },
+    {
+      id: 5,
+      name: "Gaming Portal",
+      imageUrl: project_5,
+      text: "Live site",
+      url: "https://loop-studios-gules.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/loop-studios",
+    },
+    {
+      id: 6,
+      name: "File Management System",
+      imageUrl: project_6,
+      text: "Live site",
+      url: "https://fylo-landing-page-liard.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/Fylo-Landing-Page",
+    },
+    {
+      id: 7,
+      name: "Starbucks Single Product Page",
+      imageUrl: project_7,
+      text: "Live site",
+      url: "https://starbucks-product-single-page.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/Starbucks-Product-Single-Page",
+    },
+    {
+      id: 8,
+      name: "Tesla",
+      imageUrl: project_8,
+      text: "Live site",
+      url: "https://tesla-amber.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/Tesla",
+    },
+    {
+      id: 9,
+      name: "Codeable: Hire WordPress Developers",
+      imageUrl: project_9,
+      text: "Live site",
+      url: "https://codeable-replica.vercel.app",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/codeable-replica",
+    },
+    {
+      id: 10,
+      name: "Mark Lee Photography",
+      imageUrl: project_10,
+      text: "Live site",
+      url: "https://mark-lee-gamma.vercel.app",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/Mark-Lee",
+    },
+    {
+      id: 11,
+      name: "Metro Landing Page",
+      imageUrl: project_11,
+      text: "Live site",
+      url: "https://metro-landing-page.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/metro-landing-page",
+    },
+    {
+      id: 12,
+      name: "Razor Login Page",
+      imageUrl: project_12,
+      text: "Live site",
+      url: "https://razor-login-page.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/ombudev/Razor-Login-Page",
+    },
+  ];
+  return (
+    <section className={`section`}>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <title>My Projects | Frontend Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="O'Neal Ombu" />
+        <meta
+          name="description"
+          content="Professional Frontend Web Developer with expertise in HTML, CSS, JavaScript, React and responsive design. Skilled in creating high-performance, user-friendly websites and web applications."
+        />
+        <meta
+          name="keywords"
+          content="frontend web developer, web development, HTML, CSS, JavaScript, React, frontend developer, react developer, responsive design"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="google" content="notranslate" />
+        <meta name="language" content="English" />
+      </Helmet>
+      <motion.div
+        style={{ scaleX: scrollYProgress }}
+        className={`scroll-progress-bar-motion`}
+      ></motion.div>
+      <div className={`container`}>
+        <h1 className={`title`}>Projects</h1>
+        <motion.div
+          className={`columns is-multiline`}
+          animate={{
+            scale: [2, 1],
+            rotate: [90, 0],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+        >
+          {ProjectList.map((item) => {
+            return (
+              <div className={`column is-one-third`} key={item.id}>
+                <motion.div
+                  key={item.id}
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.5 },
+                  }}
+                >
+                  <div className={`card`}>
+                    <div className={`card-image`}>
+                      <figure className={`image`}>
+                        <img src={item.imageUrl} />
+                      </figure>
+                    </div>
+                    <div className={`card-content`}>
+                      <div className={`media`}>
+                        <div className={`media-content`}>
+                          <p className={`title is-size-6`}>{item.name}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <footer className={"card-footer"}>
+                      <p className={"card-footer-item"}>
+                        <p className={"subtitle is-size-6"}>
+                          <a href={item.url} target={"_blank"}>
+                            {item.text}{" "}
+                            <FaExternalLinkAlt style={{ fontSize: "15px" }} />
+                          </a>
+                        </p>
+                      </p>
+                      <p className={"card-footer-item"}>
+                        <p className={"subtitle is-size-6"}>
+                          <a href={item.gitUrl} target={"_blank"}>
+                            {item.social}{" "}
+                            <FaExternalLinkAlt style={{ fontSize: "15px" }} />
+                          </a>
+                        </p>
+                      </p>
+                    </footer>
+                  </div>
+                </motion.div>
+              </div>
+            );
+          })}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
