@@ -37,7 +37,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://remote-clone.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/ombudev/buymejollof",
+      gitUrl: "https://github.com/React-Ruler/buymejollof",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://buymejollof.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/ombudev/buymejollof",
+      gitUrl: "https://github.com/React-Ruler/buymejollof",
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://elevo.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/ombudev/elevo",
+      gitUrl: "https://github.com/React-Ruler/elevo",
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://loop-studios-gules.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/ombudev/loop-studios",
+      gitUrl: "https://github.com/React-Ruler/loop-studios",
     },
     
     {
@@ -83,7 +83,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://starbucks-product-single-page.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/ombudev/Starbucks-Product-Single-Page",
+      gitUrl: "https://github.com/React-Ruler/Starbucks-Product-Single-Page",
     },
     
   ];
