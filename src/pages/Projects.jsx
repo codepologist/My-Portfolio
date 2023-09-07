@@ -7,13 +7,9 @@ import {
   project_3,
   project_4,
   project_5,
-  project_6,
-  project_7,
   project_8,
-  project_9,
-  project_10,
-  project_11,
-  project_12,
+  project_7,
+  
 } from "../assets";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -27,6 +23,15 @@ const Projects = () => {
   const ProjectList = [
     {
       id: 1,
+      name: "An eCommerce store for urban clothing. ",
+      imageUrl: project_8,
+      text: "Live site",
+      url: "https://myfubu-store.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/React-Ruler/myfubu-store",
+    },
+    {
+      id: 2,
       name: "HR Solutions for Distributed Teams",
       imageUrl: project_1,
       text: "Live site",
@@ -35,7 +40,7 @@ const Projects = () => {
       gitUrl: "https://github.com/ombudev/buymejollof",
     },
     {
-      id: 2,
+      id: 3,
       name: "E-commerce Food Delivery Portal",
       imageUrl: project_2,
       text: "Live site",
@@ -44,7 +49,7 @@ const Projects = () => {
       gitUrl: "https://github.com/ombudev/buymejollof",
     },
     {
-      id: 3,
+      id: 4,
       name: "E-commerce Market Place for Designers",
       imageUrl: project_3,
       text: "Live site",
@@ -53,7 +58,7 @@ const Projects = () => {
       gitUrl: "https://github.com/ombudev/dribbble-job-board",
     },
     {
-      id: 4,
+      id: 5,
       name: "Elementary School Application Portal",
       imageUrl: project_4,
       text: "Live site",
@@ -62,7 +67,7 @@ const Projects = () => {
       gitUrl: "https://github.com/ombudev/elevo",
     },
     {
-      id: 5,
+      id: 6,
       name: "Gaming Portal",
       imageUrl: project_5,
       text: "Live site",
@@ -70,15 +75,7 @@ const Projects = () => {
       social: "GitHub",
       gitUrl: "https://github.com/ombudev/loop-studios",
     },
-    {
-      id: 6,
-      name: "File Management System",
-      imageUrl: project_6,
-      text: "Live site",
-      url: "https://fylo-landing-page-liard.vercel.app/",
-      social: "GitHub",
-      gitUrl: "https://github.com/ombudev/Fylo-Landing-Page",
-    },
+    
     {
       id: 7,
       name: "Starbucks Single Product Page",
@@ -88,51 +85,7 @@ const Projects = () => {
       social: "GitHub",
       gitUrl: "https://github.com/ombudev/Starbucks-Product-Single-Page",
     },
-    {
-      id: 8,
-      name: "Tesla",
-      imageUrl: project_8,
-      text: "Live site",
-      url: "https://tesla-amber.vercel.app/",
-      social: "GitHub",
-      gitUrl: "https://github.com/ombudev/Tesla",
-    },
-    {
-      id: 9,
-      name: "Codeable: Hire WordPress Developers",
-      imageUrl: project_9,
-      text: "Live site",
-      url: "https://codeable-replica.vercel.app",
-      social: "GitHub",
-      gitUrl: "https://github.com/ombudev/codeable-replica",
-    },
-    {
-      id: 10,
-      name: "Mark Lee Photography",
-      imageUrl: project_10,
-      text: "Live site",
-      url: "https://mark-lee-gamma.vercel.app",
-      social: "GitHub",
-      gitUrl: "https://github.com/ombudev/Mark-Lee",
-    },
-    {
-      id: 11,
-      name: "Metro Landing Page",
-      imageUrl: project_11,
-      text: "Live site",
-      url: "https://metro-landing-page.vercel.app/",
-      social: "GitHub",
-      gitUrl: "https://github.com/ombudev/metro-landing-page",
-    },
-    {
-      id: 12,
-      name: "Razor Login Page",
-      imageUrl: project_12,
-      text: "Live site",
-      url: "https://razor-login-page.vercel.app/",
-      social: "GitHub",
-      gitUrl: "https://github.com/ombudev/Razor-Login-Page",
-    },
+    
   ];
   return (
     <section className={`section`}>
