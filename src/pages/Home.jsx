@@ -65,24 +65,8 @@ const Home = () => {
               >
                 With my solid front-end experience. I enjoy blending logic and
                 creative design to create visually appealing, accessible,
-                user-friendly websites and applications using libraries and
-                frameworks such as {" "}
-                <span className={`icon-color has-text-weight-bold`}>
-                  React/NextJs
-                </span>
-                ,
-                <span className={`icon-color has-text-weight-bold`}>
-                  Sass/Scss
-                </span>
-                ,
-                <span className={`icon-color has-text-weight-bold`}>
-                  Tailwind CSS
-                </span>
-                ,
-                <span className={`icon-color has-text-weight-bold`}>
-                  Git/Github
-                </span>
-                .
+                user-friendly websites and applications using state-of-the-art libraries and
+                frameworks.
               </motion.p>
               <motion.div
                 initial={{ x: -50, scale: 0.5 }}
