@@ -16,7 +16,7 @@ const Home = () => {
     <section className={`hero is-halfheight`}>
       <Helmet>
         <meta charset="UTF-8" />
-        <title>O'Neal Ombu | Frontend Developer</title>
+        <title>O'Neal Ombu | Fullstack Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="author" content="O'Neal Ombu" />
@@ -55,7 +55,7 @@ const Home = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 1 }}
               >
-                Frontend Web Developer
+                Fullstack Developer
               </motion.h1>
               <motion.p
                 className={`sub_text`}
@@ -63,7 +63,7 @@ const Home = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 2 }}
               >
-                With my solid front-end experience. I enjoy blending logic and
+                With my solid front-end and back-end experience. I enjoy blending logic and
                 creative design to create visually appealing, accessible,
                 user-friendly websites and applications using state-of-the-art libraries and
                 frameworks.

@@ -8,16 +8,17 @@ import {
   FaSass,
   FaReact,
   FaDatabase,
-  FaPhp,
   FaHdd,
   FaWordpress,
-  FaLinux,
   FaTerminal,
   FaGit,
   FaDocker,
   FaNode,
+
 } from 'react-icons/fa';
-import { SiBulma, SiChakraui } from 'react-icons/si';
+import { SiBulma, SiTailwindcss, SiNextdotjs, SiFirebase } from 'react-icons/si';
+
+
 
 const Skills = () => {
   const { scrollYProgress } = useScroll();
@@ -30,7 +31,7 @@ const Skills = () => {
     <section className={`section`}>
       <Helmet>
         <meta charset="UTF-8" />
-        <title>My Skills | Frontend Developer</title>
+        <title>My Skills | Fullstack Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="author" content="O'Neal Ombu" />
@@ -99,12 +100,12 @@ const Skills = () => {
             <p className={`has-text-weight-medium is-size-6-mobile`}>Bulma</p>
           </div>
           <div className={'column is-one-quarter'}>
-            <SiChakraui
+            <SiTailwindcss
               className={`icon-color skills-icon-color`}
               style={{ fontSize: '65px' }}
             />
             <p className={`has-text-weight-medium is-size-6-mobile`}>
-              Chakra UI
+              TailwindCSS
             </p>
           </div>
           <div className={'column is-one-quarter'}>
@@ -122,7 +123,7 @@ const Skills = () => {
               className={`icon-color skills-icon-color`}
               style={{ fontSize: '65px' }}
             />
-            <p className={`has-text-weight-medium is-size-6-mobile`}>React</p>
+            <p className={`has-text-weight-medium is-size-6-mobile`}>React.js</p>
           </div>
           <div className={'column is-one-quarter'}>
             <FaDatabase
@@ -130,15 +131,15 @@ const Skills = () => {
               style={{ fontSize: '65px' }}
             />
             <p className={`has-text-weight-medium is-size-6-mobile`}>
-              MySQL
+              Sanity.io
             </p>
           </div>
           <div className={'column is-one-quarter'}>
-            <FaPhp
+            <SiNextdotjs
               className={`icon-color skills-icon-color`}
               style={{ fontSize: '65px' }}
             />
-            <p className={`has-text-weight-medium is-size-6-mobile`}>PHP</p>
+            <p className={`has-text-weight-medium is-size-6-mobile`}>Next.js</p>
           </div>
           <div className={'column is-one-quarter'}>
             <FaWordpress
@@ -150,11 +151,11 @@ const Skills = () => {
             </p>
           </div>
           <div className={'column is-one-quarter'}>
-            <FaLinux
+            <SiFirebase
               className={`icon-color skills-icon-color`}
               style={{ fontSize: '65px' }}
             />
-            <p className={`has-text-weight-medium is-size-6-mobile`}>Linux</p>
+            <p className={`has-text-weight-medium is-size-6-mobile`}>Firebase</p>
           </div>
           <div className={'column is-one-quarter'}>
             <FaTerminal
@@ -193,7 +194,7 @@ const Skills = () => {
               className={`icon-color skills-icon-color`}
               style={{ fontSize: '65px' }}
             />
-            <p className={`has-text-weight-medium is-size-6-mobile`}>Node</p>
+            <p className={`has-text-weight-medium is-size-6-mobile`}>Node.js</p>
           </div>
         </motion.div>
       </div>

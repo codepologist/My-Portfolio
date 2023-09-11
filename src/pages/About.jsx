@@ -12,8 +12,7 @@ import {
   SiJavascript,
   SiBulma,
   SiTypescript,
-  SiReact,
-  SiChakraui,
+  SiReact,SiTailwindcss, SiFirebase
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import { GiDatabase } from "react-icons/gi";
@@ -30,7 +29,7 @@ const About = () => {
     <section className={`section`}>
       <Helmet>
         <meta charset="UTF-8" />
-        <title>About O'Neal Ombu | Frontend Developer</title>
+        <title>About O'Neal Ombu | Fullstack Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="author" content="O'Neal Ombu" />
@@ -72,7 +71,7 @@ const About = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.2 }}
               >
-                I am a professional Frontend Developer with experience building
+                I am a professional Fullstack Developer with experience building
                 scalable and efficient client-side applications using React and
                 other various frameworks.
               </motion.p>
@@ -136,10 +135,28 @@ const About = () => {
                 <span className={`icon-text`}>
                   <span className={`icon-color has-text-weight-medium`}>
                     {" "}
-                    Chakra UI
+                    Sanity.io
                   </span>
                   <span className={`icon`}>
-                    <SiChakraui style={{ color: "#e4d04b" }} />
+                    <GiDatabase style={{ color: "#5aaa46" }} />
+                  </span>
+                </span>{" "}
+                <span className={`icon-text`}>
+                  <span className={`icon-color has-text-weight-medium`}>
+                    {" "}
+                    Firebase
+                  </span>
+                  <span className={`icon`}>
+                    <SiFirebase style={{ color: "#5aaa46" }} />
+                  </span>
+                </span>{" "}
+                <span className={`icon-text`}>
+                  <span className={`icon-color has-text-weight-medium`}>
+                    {" "}
+                    TailwindCss
+                  </span>
+                  <span className={`icon`}>
+                    <SiTailwindcss style={{ color: "#61dafb" }} />
                   </span>
                 </span>{" "}
                 and{" "}
@@ -194,10 +211,10 @@ const About = () => {
                 and{" "}
                 <span className={`icon-text`}>
                   <span className={`icon-color has-text-weight-medium`}>
-                    AppWrite
+                    Supabase
                   </span>
                   <span className={`icon`}>
-                    <GiDatabase style={{ color: "#f02e65" }} />
+                    <GiDatabase style={{ color: "#5aaa46" }} />
                   </span>
                 </span>
               </motion.p>
