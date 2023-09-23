@@ -7,9 +7,9 @@ import {
   project_3,
   project_4,
   project_5,
+  project_6,
   project_8,
   project_7,
-  
 } from "../assets";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -23,7 +23,7 @@ const Projects = () => {
   const ProjectList = [
     {
       id: 1,
-      name: "An eCommerce store for urban clothing. ",
+      name: "An eCommerce store for urban clothing",
       imageUrl: project_8,
       text: "Live site",
       url: "https://myfubu-store.vercel.app/",
@@ -32,6 +32,15 @@ const Projects = () => {
     },
     {
       id: 2,
+      name: "An eCommerce app for ordering food",
+      imageUrl: project_6,
+      text: "Live site",
+      url: "https://wingside-store.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/React-Ruler/wingside-store",
+    },
+    {
+      id: 3,
       name: "HR Solutions for Distributed Teams",
       imageUrl: project_1,
       text: "Live site",
@@ -40,7 +49,7 @@ const Projects = () => {
       gitUrl: "https://github.com/React-Ruler/buymejollof",
     },
     {
-      id: 3,
+      id: 4,
       name: "E-commerce Food Delivery Portal",
       imageUrl: project_2,
       text: "Live site",
@@ -49,7 +58,7 @@ const Projects = () => {
       gitUrl: "https://github.com/React-Ruler/buymejollof",
     },
     {
-      id: 4,
+      id: 5,
       name: "E-commerce Market Place for Designers",
       imageUrl: project_3,
       text: "Live site",
@@ -58,7 +67,7 @@ const Projects = () => {
       gitUrl: "https://github.com/ombudev/dribbble-job-board",
     },
     {
-      id: 5,
+      id: 6,
       name: "Elementary School Application Portal",
       imageUrl: project_4,
       text: "Live site",
@@ -75,7 +84,7 @@ const Projects = () => {
       social: "GitHub",
       gitUrl: "https://github.com/React-Ruler/loop-studios",
     },
-    
+
     {
       id: 7,
       name: "Starbucks Single Product Page",
@@ -85,7 +94,6 @@ const Projects = () => {
       social: "GitHub",
       gitUrl: "https://github.com/React-Ruler/Starbucks-Product-Single-Page",
     },
-    
   ];
   return (
     <section className={`section`}>
