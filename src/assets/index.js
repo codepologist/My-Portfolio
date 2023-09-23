@@ -3,7 +3,7 @@ import project_2 from "./project_2.webp";
 import project_3 from "./project_3.webp";
 import project_4 from "./project_4.webp";
 import project_5 from "./project_5.webp";
-
+import project_6 from "./project_6.webp";
 import project_7 from "./project_7.webp";
 import project_8 from "./project_8.webp";
 
@@ -15,7 +15,7 @@ export {
   project_3,
   project_4,
   project_5,
- 
+  project_6,
   project_7,
   project_8,
   
