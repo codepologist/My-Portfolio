@@ -259,7 +259,7 @@ const About = () => {
                   }}
                 >
                   <a
-                    href="https://www.twitter.com/ReactRuler"
+                    href="https://www.twitter.com/ONealOmbu"
                     target={`_blank`}
                   >
                     <FaTwitter
