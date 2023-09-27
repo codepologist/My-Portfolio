@@ -1,8 +1,8 @@
-import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { Home, About, Skills, Projects, Contact } from './pages';
-import { Header, Footer } from './components';
-import { AnimatePresence } from 'framer-motion';
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { Home, About, Skills, Projects, Contact } from "./pages";
+import { Header, Footer } from "./components";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
