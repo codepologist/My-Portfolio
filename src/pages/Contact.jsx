@@ -200,7 +200,7 @@ const Contact = () => {
                   }}
                 >
                   <a
-                    href="https://www.twitter.com/ONelOmbu"
+                    href="https://www.twitter.com/Codepologist"
                     target={`_blank`}
                   >
                     <FaTwitter
@@ -216,7 +216,7 @@ const Contact = () => {
                   }}
                 >
                   <a
-                    href="https://www.github.com/React-Ruler"
+                    href="https://www.github.com/Codepologist"
                     target={`_blank`}
                   >
                     <FaGithub
