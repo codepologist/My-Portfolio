@@ -200,7 +200,7 @@ const Contact = () => {
                   }}
                 >
                   <a
-                    href="https://www.twitter.com/Codepologist"
+                    href="https://www.twitter.com/ONealOmbu"
                     target={`_blank`}
                   >
                     <FaTwitter
