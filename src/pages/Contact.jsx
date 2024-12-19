@@ -161,7 +161,7 @@ const Contact = () => {
                 </a>
                 <a
                   className={`icon-color`}
-                  href="https://wa.me/message/EMFT26RDG2BDL1"
+                  href="wa.me/2347060487713"
                   target={`_blank`}
                 >
                   <span className={"icon-text"}>
