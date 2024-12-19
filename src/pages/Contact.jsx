@@ -161,14 +161,14 @@ const Contact = () => {
                 </a>
                 <a
                   className={`icon-color`}
-                  href="wa.me/2347060487713"
+                  href="https://wa.me/2347060487713"
                   target={`_blank`}
                 >
                   <span className={"icon-text"}>
                     <span className={"icon"}>
                       <FaWhatsapp className={`icon-color`} />
                     </span>
-                    <span>https://wa.me/message/EMFT26RDG2BDL1</span>
+                    <span>https://wa.me/2347060487713</span>
                   </span>
                 </a>
               </motion.p>
