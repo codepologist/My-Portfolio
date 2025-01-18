@@ -63,7 +63,7 @@ const Home = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 2 }}
               >
-                With my solid front-end and back-end experience. I enjoy blending logic and
+                With my solid front-end experience. I enjoy blending logic and
                 creative design to create visually appealing, accessible,
                 user-friendly websites and applications using state-of-the-art libraries and
                 frameworks.

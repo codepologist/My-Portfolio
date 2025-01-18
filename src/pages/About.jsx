@@ -29,7 +29,7 @@ const About = () => {
     <section className={`section`}>
       <Helmet>
         <meta charset="UTF-8" />
-        <title>About O'Neal Ombu | Fullstack Developer</title>
+        <title>About O'Neal Ombu | Frontend Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="author" content="O'Neal Ombu" />
@@ -71,7 +71,7 @@ const About = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.2 }}
               >
-                I am a professional Fullstack Developer with experience building
+                I am a professional Frontend Engineer with experience building
                 scalable and efficient client-side applications using React and
                 other various frameworks.
               </motion.p>
