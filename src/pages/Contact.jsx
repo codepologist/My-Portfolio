@@ -216,7 +216,7 @@ const Contact = () => {
                   }}
                 >
                   <a
-                    href="https://www.github.com/Codepologist"
+                    href="https://www.github.com/codepologist"
                     target={`_blank`}
                   >
                     <FaGithub

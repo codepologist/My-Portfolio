@@ -274,7 +274,7 @@ const About = () => {
                     transition: { duration: 0.5 },
                   }}
                 >
-                  <a href="https://www.github.com/React-Ruler" target={`_blank`}>
+                  <a href="https://www.github.com/codepologist" target={`_blank`}>
                     <FaGithub
                       className={`icon-color`}
                       style={{ fontSize: "20px" }}
