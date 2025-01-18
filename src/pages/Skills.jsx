@@ -31,7 +31,7 @@ const Skills = () => {
     <section className={`section`}>
       <Helmet>
         <meta charset="UTF-8" />
-        <title>My Skills | Fullstack Developer</title>
+        <title>My Skills | Frontend Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="author" content="O'Neal Ombu" />
