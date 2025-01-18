@@ -143,22 +143,14 @@ const Contact = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.4 }}
               >
-                I'm available to grab a snack and chat! Drop a comment,
-                question, or a concern by E-mail or WhatsApp.
+                I'm available to work! Drop a comment,
+                question, or a concern via WhatsApp.
               </motion.p>
               <motion.p
                 initial={{ x: 200, scale: 0.1 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <a className={`icon-color`} href="mailto:ombu.oneal@yahoo.com">
-                  <span className={"icon-text"}>
-                    <span className={"icon"}>
-                      <FaEnvelope className={`icon-color`} />
-                    </span>
-                    <span>ombu.oneal@yahoo.com</span>
-                  </span>
-                </a>
                 <a
                   className={`icon-color`}
                   href="https://wa.me/2347060487713"
