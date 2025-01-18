@@ -144,25 +144,13 @@ const Contact = () => {
                 transition={{ duration: 0.4 }}
               >
                 I'm available to work! Drop a comment,
-                question, or a concern via WhatsApp.
+                question, or a concern via the form.
               </motion.p>
               <motion.p
                 initial={{ x: 200, scale: 0.1 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <a
-                  className={`icon-color`}
-                  href="https://wa.me/2347060487713"
-                  target={`_blank`}
-                >
-                  <span className={"icon-text"}>
-                    <span className={"icon"}>
-                      <FaWhatsapp className={`icon-color`} />
-                    </span>
-                    <span>https://wa.me/2347060487713</span>
-                  </span>
-                </a>
               </motion.p>
 
               <div
