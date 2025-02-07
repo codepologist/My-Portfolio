@@ -1,7 +1,7 @@
-import React from 'react';
-import { FaCode } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import React from "react";
+import { FaCode } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,18 +13,20 @@ const Header = () => {
     <nav
       className={`navbar is-spaced is-transparent`}
       role="navigation"
-      aria-label="main navigation">
+      aria-label="main navigation"
+    >
       <div className={`navbar-brand`}>
         <NavLink to="/" className={`navbar-item`}>
-          <FaCode className={`icon-color`} style={{ fontSize: '45px' }} />
+          <FaCode className={`icon-color`} style={{ fontSize: "45px" }} />
         </NavLink>
         <a
           role={`button`}
-          className={`navbar-burger burger ${menuOpen ? 'is-active' : ''}`}
+          className={`navbar-burger burger ${menuOpen ? "is-active" : ""}`}
           aria-label={`menu`}
           aria-expanded={`false`}
           data-target={`navbarBasicExample`}
-          onClick={toggleMenu}>
+          onClick={toggleMenu}
+        >
           <span aria-hidden={`true`}></span>
           <span aria-hidden={`true`}></span>
           <span aria-hidden={`true`}></span>
@@ -33,24 +35,37 @@ const Header = () => {
 
       <div
         id={`navbarBasicExample`}
-        className={`navbar-menu ${menuOpen ? 'is-active' : ''}`}>
+        className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
+      >
         <div className={`navbar-end`}>
-          <NavLink to="/" className={'navbar-item is-active'} onClick={toggleMenu}>
+          <NavLink
+            to="/"
+            className={"navbar-item is-active"}
+            onClick={toggleMenu}
+          >
             Home
           </NavLink>
-          <NavLink to="/About" className={'navbar-item'} onClick={toggleMenu}>
+          <NavLink to="/About" className={"navbar-item"} onClick={toggleMenu}>
             About
           </NavLink>
-          <NavLink to="/Skills" className={'navbar-item'} onClick={toggleMenu}>
+          <NavLink to="/Skills" className={"navbar-item"} onClick={toggleMenu}>
             Skills
           </NavLink>
           <NavLink
             to="/Projects"
-            className={'navbar-item'}
-            onClick={toggleMenu}>
+            className={"navbar-item"}
+            onClick={toggleMenu}
+          >
             Projects
           </NavLink>
-          <NavLink to="/Contact" className={'navbar-item'} onClick={toggleMenu}>
+          <NavLink
+            to="/Playlist"
+            className={"navbar-item"}
+            onClick={toggleMenu}
+          >
+            Playlist
+          </NavLink>
+          <NavLink to="/Contact" className={"navbar-item"} onClick={toggleMenu}>
             Contact
           </NavLink>
         </div>
