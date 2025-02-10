@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { FaTwitter, FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
+
 const Contact = () => {
+  const [showPopup, setShowPopup] = useState(false); // Add state for popup
+
   const {
     register,
-    formState: { errors },
     handleSubmit,
+    formState: { errors },
+    reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const sendEmail = (data) => {
+    emailjs
+      .send("service_idkjcja", "template_9hx2v0j", data, "YR_3TWs_Ceo4HG9Zl")
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          reset();
+          setShowPopup(true); // Show popup
+          setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -42,6 +62,11 @@ const Contact = () => {
         style={{ scaleX: scrollYProgress }}
         className={`scroll-progress-bar-motion`}
       ></motion.div>
+      {showPopup && (
+        <div className="popup">
+          <p>Email sent successfully!</p>
+        </div>
+      )}
       <div className={`container`}>
         <h1 className={`title`}>Contact</h1>
         <div className={"columns"}>
@@ -52,7 +77,11 @@ const Contact = () => {
             exit={{ scaleY: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <form id={`contact-form`} onSubmit={handleSubmit(onSubmit)}>
+            <form
+              noValidate
+              autoComplete="off"
+              onSubmit={handleSubmit(sendEmail)}
+            >
               <div className={"field"}>
                 <div className={`control`}>
                   <input type="hidden" name="to_name" value="ONeal Ombu" />
@@ -61,6 +90,7 @@ const Contact = () => {
               <div className={`field`}>
                 <div className={`control`}>
                   <input
+                    {...register("user_name", { required: true })}
                     name="user_name"
                     className={`input px-5 py-5`}
                     type="text"
@@ -68,11 +98,21 @@ const Contact = () => {
                     required
                   />
                 </div>
+                {errors.user_name && (
+                  <p class="help" style={{ color: "#B22222" }}>
+                    This field is required
+                  </p>
+                )}
               </div>
 
               <div className={`field`}>
                 <div className={`control`}>
                   <input
+                    {...register("user_email", {
+                      required: true,
+                      pattern:
+                        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                    })}
                     name="user_email"
                     className={`input px-5 py-5`}
                     type="email"
@@ -80,11 +120,20 @@ const Contact = () => {
                     required
                   />
                 </div>
+                {errors.user_email && (
+                  <p class="help" style={{ color: "#B22222" }}>
+                    {errors.user_email.type === "required" &&
+                      "This field is required"}
+                    {errors.user_email.type === "pattern" &&
+                      "Please enter a valid email address"}
+                  </p>
+                )}
               </div>
 
               <div className={`field`}>
                 <div className={`control`}>
                   <textarea
+                    {...register("message", { required: true })}
                     name="message"
                     className={`textarea px-5 py5 has-fixed-size`}
                     placeholder="Write message here..."
@@ -93,9 +142,11 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <p class="help" style={{ color: "#B22222" }}>
-                  This username is available
-                </p>
+                {errors.message && (
+                  <p class="help" style={{ color: "#B22222" }}>
+                    This field is required
+                  </p>
+                )}
               </div>
 
               <div className={`field`}>
