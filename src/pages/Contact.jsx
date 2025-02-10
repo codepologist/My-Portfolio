@@ -93,6 +93,9 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
+                <p class="help" style={{ color: "#B22222" }}>
+                  This username is available
+                </p>
               </div>
 
               <div className={`field`}>
