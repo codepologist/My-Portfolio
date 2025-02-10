@@ -2,14 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet";
 import { motion, useScroll, useSpring } from "framer-motion";
-import {
-  FaEnvelope,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaPaperPlane,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
 const Contact = () => {
   const {
     register,
@@ -143,15 +136,14 @@ const Contact = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.4 }}
               >
-                I'm available to work! Drop a comment,
-                question, or a concern via the form.
+                I'm available to work! Drop a comment, question, or a concern
+                via the form.
               </motion.p>
               <motion.p
                 initial={{ x: 200, scale: 0.1 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.5 }}
-              >
-              </motion.p>
+              ></motion.p>
 
               <div
                 className={`is-flex is-flex-direction-row is-justify-content-space-evenly`}
@@ -179,10 +171,7 @@ const Contact = () => {
                     transition: { duration: 0.5 },
                   }}
                 >
-                  <a
-                    href="https://www.twitter.com/ONealOmbu"
-                    target={`_blank`}
-                  >
+                  <a href="https://www.twitter.com/ONealOmbu" target={`_blank`}>
                     <FaTwitter
                       className={`icon-color`}
                       style={{ fontSize: "20px" }}
