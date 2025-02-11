@@ -28,7 +28,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://myfubu-store.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/myfubu-store",
+      gitUrl: "https://github.com/codepologist/myfubu-store",
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://wingside-store.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/wingside-store",
+      gitUrl: "https://github.com/codepologist/wingside-store",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://remote-clone.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/buymejollof",
+      gitUrl: "https://github.com/codepologist/Remote-Clone.git",
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://buymejollof.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/buymejollof",
+      gitUrl: "https://github.com/codepologist/buymejollof",
     },
     {
       id: 5,
@@ -73,7 +73,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://elevo.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/elevo",
+      gitUrl: "https://github.com/codepologist/elevo",
     },
     {
       id: 6,
@@ -82,7 +82,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://loop-studios-gules.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/loop-studios",
+      gitUrl: "https://github.com/codepologist/loop-studios",
     },
 
     {
@@ -92,7 +92,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://starbucks-product-single-page.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/React-Ruler/Starbucks-Product-Single-Page",
+      gitUrl: "https://github.com/codepologist/Starbucks-Product-Single-Page",
     },
   ];
   return (
