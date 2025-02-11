@@ -55,7 +55,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://buymejollof.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/codepologist/buymejollof",
+      gitUrl: "https://github.com/codepologist/buymejollof.git",
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://dribbble-job-board.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/ombudev/dribbble-job-board",
+      gitUrl: "https://github.com/ombudev/dribbble-job-board.git",
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://elevo.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/codepologist/elevo",
+      gitUrl: "https://github.com/codepologist/elevo.git",
     },
     {
       id: 6,
@@ -82,7 +82,7 @@ const Projects = () => {
       text: "Live site",
       url: "https://loop-studios-gules.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/codepologist/loop-studios",
+      gitUrl: "https://github.com/codepologist/loop-studios.git",
     },
 
     {
@@ -92,7 +92,8 @@ const Projects = () => {
       text: "Live site",
       url: "https://starbucks-product-single-page.vercel.app/",
       social: "GitHub",
-      gitUrl: "https://github.com/codepologist/Starbucks-Product-Single-Page",
+      gitUrl:
+        "https://github.com/codepologist/Starbucks-Product-Single-Page.git",
     },
   ];
   return (
