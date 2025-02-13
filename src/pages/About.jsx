@@ -60,7 +60,7 @@ const About = () => {
               animate={{ x: 0, scale: 1 }}
               transition={{ duration: 1 }}
             >
-              <img src={about} alt="Software Engineer" />
+              <img src={about} alt="Frontend Engineer" />
             </motion.figure>
           </div>
           <div className={`column is-one-third is-offset-1`}>
@@ -71,7 +71,7 @@ const About = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.2 }}
               >
-                I am a professional Frontend Engineer with experience building
+                I am a Frontend Engineer with experience building
                 scalable and efficient client-side applications using React and
                 other various frameworks.
               </motion.p>

@@ -209,7 +209,7 @@ const Contact = () => {
                   }}
                 >
                   <a
-                    href="https://www.linkedin/in/oneal-ombu"
+                    href="https://www.linkedin.com/in/oneal-ombu/"
                     target={`_blank`}
                   >
                     <FaLinkedin
