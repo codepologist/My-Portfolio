@@ -12,7 +12,9 @@ import {
   SiJavascript,
   SiBulma,
   SiTypescript,
-  SiReact,SiTailwindcss, SiFirebase
+  SiReact,
+  SiTailwindcss,
+  SiFirebase,
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import { GiDatabase } from "react-icons/gi";
@@ -26,7 +28,7 @@ const About = () => {
     restDelta: 0.001,
   });
   return (
-    <section className={`section`}>
+    <section className="section">
       <Helmet>
         <meta charset="UTF-8" />
         <title>About O'Neal Ombu | Frontend Engineer</title>
@@ -48,14 +50,14 @@ const About = () => {
       </Helmet>
       <motion.div
         style={{ scaleX: scrollYProgress }}
-        className={`scroll-progress-bar-motion`}
+        className="scroll-progress-bar-motion"
       ></motion.div>
-      <div className={`container`}>
-        <h1 className={`title ml-5`}>A little bit about O'Neal</h1>
-        <div className={`columns is-multiline`}>
-          <div className={`column is-one-third is-offset-1`}>
+      <div className="container">
+        <h1 className="title ml-5">A little bit about O'Neal</h1>
+        <div className="columns is-multiline">
+          <div className="column">
             <motion.figure
-              className={`image`}
+              className="image"
               initial={{ x: -300, scale: 0.5 }}
               animate={{ x: 0, scale: 1 }}
               transition={{ duration: 1 }}
@@ -63,20 +65,20 @@ const About = () => {
               <img src={about} alt="Frontend Engineer" />
             </motion.figure>
           </div>
-          <div className={`column is-one-third is-offset-1`}>
-            <div className={`content`}>
+          <div className="column">
+            <div className="content">
               <motion.p
-                className={`sub-text`}
+                className="sub-text"
                 initial={{ x: 200, scale: 0.1 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.2 }}
               >
-                I am a Frontend Engineer with experience building
-                scalable and efficient client-side applications using React and
-                other various frameworks.
+                I am a Frontend Engineer with experience building scalable and
+                efficient client-side applications using React and other various
+                frameworks.
               </motion.p>
               <motion.p
-                className={`sub-text`}
+                className="sub-text"
                 initial={{ x: 200, scale: 0.1 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.3 }}
@@ -88,7 +90,7 @@ const About = () => {
                 budget.
               </motion.p>
               <motion.p
-                className={`sub-text`}
+                className="sub-text"
                 initial={{ x: 200, scale: 0.1 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.4 }}
@@ -99,142 +101,7 @@ const About = () => {
                 collaborated with cross-functional teams to deliver successful
                 projects.
               </motion.p>
-              <motion.p
-                className={`sub-text`}
-                initial={{ x: 200, scale: 0.1 }}
-                animate={{ x: 0, scale: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                I am always looking for new challenges and opportunities to
-                expand my skill set. I am passionate about software development
-                and excited to bring my expertise to any organization.
-              </motion.p>
-              <motion.p
-                className={`sub-text`}
-                initial={{ x: 200, scale: 0.1 }}
-                animate={{ x: 0, scale: 1 }}
-                transition={{ duration: 0.6 }}
-              >
-                My current tech stack includes{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    React
-                  </span>
-                  <span className={`icon`}>
-                    <SiReact style={{ color: "#61dafb" }} />
-                  </span>
-                </span>
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    JavaScript
-                  </span>
-                  <span className={`icon`}>
-                    <SiJavascript style={{ color: "#e4d04b" }} />
-                  </span>
-                </span>{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    {" "}
-                    Sanity.io
-                  </span>
-                  <span className={`icon`}>
-                    <GiDatabase style={{ color: "#5aaa46" }} />
-                  </span>
-                </span>{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    {" "}
-                    Firebase
-                  </span>
-                  <span className={`icon`}>
-                    <SiFirebase style={{ color: "#5aaa46" }} />
-                  </span>
-                </span>{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    {" "}
-                    TailwindCss
-                  </span>
-                  <span className={`icon`}>
-                    <SiTailwindcss style={{ color: "#61dafb" }} />
-                  </span>
-                </span>{" "}
-                and{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    Bulma
-                  </span>
-                  <span className={`icon`}>
-                    <SiBulma style={{ color: "#00d1b2" }} />
-                  </span>
-                </span>
-              </motion.p>
-              <motion.p
-                className={`sub-text`}
-                initial={{ x: 200, scale: 0.1 }}
-                animate={{ x: 0, scale: 1 }}
-                transition={{ duration: 0.7 }}
-              >
-                Currently assimilating{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    Next.js
-                  </span>
-                  <span className={`icon`}>
-                    <TbBrandNextjs style={{ color: "#000000" }} />
-                  </span>
-                </span>{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    Node.js
-                  </span>
-                  <span className={`icon`}>
-                    <FaNodeJs style={{ color: "#5aaa46" }} />
-                  </span>
-                </span>{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    TypeScript
-                  </span>
-                  <span className={`icon`}>
-                    <SiTypescript style={{ color: "#2f74c0" }} />
-                  </span>
-                </span>{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    React Native
-                  </span>
-                  <span className={`icon`}>
-                    <TbBrandReactNative style={{ color: "#5ed3f3" }} />
-                  </span>
-                </span>{" "}
-                and{" "}
-                <span className={`icon-text`}>
-                  <span className={`icon-color has-text-weight-medium`}>
-                    Supabase
-                  </span>
-                  <span className={`icon`}>
-                    <GiDatabase style={{ color: "#5aaa46" }} />
-                  </span>
-                </span>
-              </motion.p>
-              <div className={`mt-5 mb-5`}>
-                <a
-                  href="https://drive.google.com/drive/folders/1IPPR-JsXEux0gYhdz_WRVGwQp2FG85Bt?usp=sharing"
-                  className={`btn-custom`}
-                  target={`_blank`}
-                >
-                  <span className={`icon-text`}>
-                    <span>My CV (pdf 39.4kb)</span>
-                    <span className={`icon`}>
-                      <FaCloudDownloadAlt />
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div
-                className={`is-flex is-flex-direction-row is-justify-content-space-evenly`}
-              >
+              <div className="is-flex is-flex-direction-row is-justify-content-space-evenly">
                 <motion.div
                   whileHover={{
                     scale: 2.0,
@@ -243,10 +110,10 @@ const About = () => {
                 >
                   <a
                     href="https://www.linkedin.com/in/oneal-ombu/"
-                    target={`_blank`}
+                    target="_blank"
                   >
                     <FaLinkedin
-                      className={`icon-color`}
+                      className="icon-color"
                       style={{ fontSize: "20px" }}
                     />
                   </a>
@@ -258,12 +125,9 @@ const About = () => {
                     transition: { duration: 0.5 },
                   }}
                 >
-                  <a
-                    href="https://www.twitter.com/ONealOmbu"
-                    target={`_blank`}
-                  >
+                  <a href="https://www.twitter.com/ONealOmbu" target="_blank">
                     <FaTwitter
-                      className={`icon-color`}
+                      className="icon-color"
                       style={{ fontSize: "20px" }}
                     />
                   </a>
@@ -274,13 +138,147 @@ const About = () => {
                     transition: { duration: 0.5 },
                   }}
                 >
-                  <a href="https://www.github.com/codepologist" target={`_blank`}>
+                  <a href="https://www.github.com/codepologist" target="_blank">
                     <FaGithub
-                      className={`icon-color`}
+                      className="icon-color"
                       style={{ fontSize: "20px" }}
                     />
                   </a>
                 </motion.div>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="content">
+              <motion.p
+                className="sub-text"
+                initial={{ x: 200, scale: 0.1 }}
+                animate={{ x: 0, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                I am always looking for new challenges and opportunities to
+                expand my skill set. I am passionate about software development
+                and excited to bring my expertise to any organization.
+              </motion.p>
+              <motion.p
+                className="sub-text"
+                initial={{ x: 200, scale: 0.1 }}
+                animate={{ x: 0, scale: 1 }}
+                transition={{ duration: 0.6 }}
+              >
+                My current tech stack includes
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    React
+                  </span>
+                  <span className="icon">
+                    <SiReact style={{ color: "#61dafb" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    JavaScript
+                  </span>
+                  <span className="icon">
+                    <SiJavascript style={{ color: "#e4d04b" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    Sanity.io
+                  </span>
+                  <span className="icon">
+                    <GiDatabase style={{ color: "#5aaa46" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    Firebase
+                  </span>
+                  <span className="icon">
+                    <SiFirebase style={{ color: "#5aaa46" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    TailwindCss
+                  </span>
+                  <span className="icon">
+                    <SiTailwindcss style={{ color: "#61dafb" }} />
+                  </span>
+                </span>
+                and &nbsp;
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    Bulma
+                  </span>
+                  <span className="icon">
+                    <SiBulma style={{ color: "#00d1b2" }} />
+                  </span>
+                </span>
+              </motion.p>
+              <motion.p
+                className="sub-text"
+                initial={{ x: 200, scale: 0.1 }}
+                animate={{ x: 0, scale: 1 }}
+                transition={{ duration: 0.7 }}
+              >
+                Currently assimilating &nbsp;
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    Next.js
+                  </span>
+                  <span className="icon">
+                    <TbBrandNextjs style={{ color: "#000000" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    Node.js
+                  </span>
+                  <span className="icon">
+                    <FaNodeJs style={{ color: "#5aaa46" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    TypeScript
+                  </span>
+                  <span className="icon">
+                    <SiTypescript style={{ color: "#2f74c0" }} />
+                  </span>
+                </span>
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    React Native
+                  </span>
+                  <span className="icon">
+                    <TbBrandReactNative style={{ color: "#5ed3f3" }} />
+                  </span>
+                </span>
+                and &nbsp;
+                <span className="icon-text">
+                  <span className="icon-color has-text-weight-medium">
+                    Supabase
+                  </span>
+                  <span className="icon">
+                    <GiDatabase style={{ color: "#5aaa46" }} />
+                  </span>
+                </span>
+              </motion.p>
+              <div className="mt-5 mb-5 is-flex is-justify-content-center">
+                <a
+                  href="https://drive.google.com/drive/folders/1IPPR-JsXEux0gYhdz_WRVGwQp2FG85Bt?usp=sharing"
+                  className="btn-custom"
+                  target="_blank"
+                >
+                  <span className="icon-text">
+                    <span>My CV (pdf 39.4kb)</span>
+                    <span className="icon">
+                      <FaCloudDownloadAlt />
+                    </span>
+                  </span>
+                </a>
               </div>
             </div>
           </div>
