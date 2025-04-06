@@ -47,7 +47,7 @@ const Home = () => {
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 1 }}
               >
-                <h6>Hi! there, I'm O'Neal Ombu</h6>
+                <h6>Hi! there, I'm O'Neal</h6>
               </motion.div>
               <motion.h1
                 className={`title homepage_hero_text is-size-3-mobile`}
