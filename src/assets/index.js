@@ -6,6 +6,7 @@ import project_5 from "./project_5.webp";
 import project_6 from "./project_6.webp";
 import project_7 from "./project_7.webp";
 import project_8 from "./project_8.webp";
+import project_9 from "./project_9.webp";
 
 import about from "./about.webp";
 
@@ -18,6 +19,7 @@ export {
   project_6,
   project_7,
   project_8,
+  project_9,
   
   about,
 };
