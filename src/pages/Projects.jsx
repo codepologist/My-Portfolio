@@ -134,7 +134,7 @@ const Projects = () => {
       <div className={`container`}>
         <h1 className={`title`}>Projects</h1>
         <motion.div
-          className={`columns is-multiline is-align-items-stretch`}
+          className={`columns is-multiline`}
           animate={{
             scale: [2, 1],
             rotate: [90, 0],
@@ -146,7 +146,11 @@ const Projects = () => {
         >
           {ProjectList.map((item) => {
             return (
-              <div className={`column is-one-third`} key={item.id}>
+              <div
+                className={`column is-one-third is-flex is-align-items-stretch`}
+                
+                key={item.id}
+              >
                 <motion.div
                   key={item.id}
                   whileHover={{
