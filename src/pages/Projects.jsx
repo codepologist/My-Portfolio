@@ -8,8 +8,9 @@ import {
   project_4,
   project_5,
   project_6,
-  project_8,
   project_7,
+  project_8,
+  project_9,
 } from "../assets";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -21,6 +22,15 @@ const Projects = () => {
     restDelta: 0.001,
   });
   const ProjectList = [
+    {
+      id: 9,
+      name: "Testo Fastfood Web App",
+      imageUrl: project_9,
+      text: "Live site",
+      url: "https://testo-fastfood-app.vercel.app/",
+      social: "GitHub",
+      gitUrl: "https://github.com/codepologist/testo-fastfood-app.git",
+    },
     {
       id: 1,
       name: "An eCommerce store for urban clothing",
@@ -76,7 +86,7 @@ const Projects = () => {
       gitUrl: "https://github.com/codepologist/elevo.git",
     },
     {
-      id: 6,
+      id: 7,
       name: "Gaming Portal",
       imageUrl: project_5,
       text: "Live site",
@@ -86,7 +96,7 @@ const Projects = () => {
     },
 
     {
-      id: 7,
+      id: 8,
       name: "Starbucks Single Product Page",
       imageUrl: project_7,
       text: "Live site",
@@ -124,7 +134,7 @@ const Projects = () => {
       <div className={`container`}>
         <h1 className={`title`}>Projects</h1>
         <motion.div
-          className={`columns is-multiline`}
+          className={`columns is-multiline is-align-items-stretch`}
           animate={{
             scale: [2, 1],
             rotate: [90, 0],
